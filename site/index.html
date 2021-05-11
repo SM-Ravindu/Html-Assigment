@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Media Queries</title>
+    <style>
+
+        div p{
+        vertical-align: middle;
+        }
+        span{
+            float:right;
+            width: 55px;
+            text-align: center;
+        }
+
+        .chicken{
+            background-color: aqua;
+            border:3px solid black;
+            padding: 3px;
+            margin-top: -5px;
+            margin-right: -5px;
+        }
+
+        .beef{
+            background-color: #00ff6a;
+            border:3px solid black;
+            padding: 3px;
+            margin-top: 0;
+            margin-top: -5px;
+            margin-right: -5px;
+        }
+
+        .sushi{
+            background-color: #eeff00;
+            border:3px solid black;
+            padding: 3px;
+            margin-top: 0;
+            margin-top: -5px;
+            margin-right: -5px;
+        }
+
+        /********** Base styles **********/
+        h1 {
+            margin-bottom: 15px;
+            text-align: center;
+            
+        }
+
+        p {
+            border: 4px solid black;
+            margin-bottom: 15px;
+            float: left;
+            margin-left: 130px;
+            padding: 5px;
+        }
+
+        #p1 {
+            background-color: rgb(148, 143, 143);
+            width: 70%;
+            height: 110px;
+        }
+
+        #p2 {
+            background-color: rgb(156, 154, 150);
+            width: 70%;
+            height: 110px;
+        }
+
+        #p3 {
+            background-color: rgb(155, 148, 154);
+            width: 70%;
+            height: 110px;
+        }
+
+        
+
+        /********** Large devices only **********/
+        @media (min-width: 1200px) {
+            #p1 {
+                width: 20%;
+            }
+
+            #p2 {
+                width: 20%;
+            }
+             #p3 {
+             width: 20%;
+             }
+        }
+
+
+        /********** Medium devices only **********/
+        @media (min-width: 992px) and (max-width: 1199px) {
+            #p1 {
+                width: 250px;
+                height: 120px;
+            }
+
+            #p2 {
+                width: 250px;
+                height: 120px;
+            }
+
+            #p3 {
+            width: 650px;
+            height: 120px;
+            }
+
+           
+                
+        }
+    </style>
+
+
+</head>
+
+    <body>
+        <h1>Our Menu</h1>
+
+        <div>
+            <p id="p1">
+                <span class="chicken">Chicken</span><br><br>
+                Spacing: Pay attention to the spacing shown in the mockup illustrations. Note the spacing between sections
+                (both )
+                
+            </p>
+            <p id="p2">
+                <span class="beef">Beef</span><br><br>
+                Section title region: Each section should have a section title region that is always positioned at the top
+                right corner of the 
+                
+            </p>
+            <p id="p3">
+                <span class="sushi">Sushi</span><br><br>
+                Layout: In the tablet view (between 768px and 991px, inclusively), the first 2 sections should be in the
+                first row and be of 
+                
+            </p>
+        </div>
+    </body>
+
+</html>
