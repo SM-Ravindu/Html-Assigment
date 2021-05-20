@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food , LLC</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet" type='text/css'>
+
+    <style>
+        div p {
+            vertical-align: middle;
+        }
+
+
+        .chicken {
+            padding: 3px;
+            margin-top: -5px;
+            margin-right: -5px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .beef {
+            padding: 3px;
+            margin-top: -5px;
+            margin-right: -5px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .sushi {
+            padding: 3px;
+            margin-top: -5px;
+            margin-right: -5px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /********** Base styles **********/
+        h1 {
+            margin-bottom: 15px;
+            text-align: center;
+
+        }
+
+        span{
+            padding: 5px;
+            display: block;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 15px;
+            float: left;
+            margin-left: 20px;
+            padding: 5px;
+            height: 170px;
+        
+        }
+
+        #p1 {
+            background-color: rgb(21, 126, 26);
+            
+        }
+
+        #p2 {
+            background-color: rgb(105, 11, 93);
+
+        }
+
+        #p3 {
+            background-color: rgb(6, 107, 107);
+
+        }
+
+
+
+        /********** Large devices only **********/
+        @media (min-width: 1200px) {
+            #p1 {
+                width: 30%;
+            }
+
+            #p2 {
+                width: 30%;
+            }
+
+            #p3 {
+                width: 30%;
+            }
+        }
+
+
+        /********** Medium devices only **********/
+        @media (min-width: 992px) and (max-width: 1199px) {
+            #p1 {
+                width: 313px;
+                height: 130px;
+            }
+
+            #p2 {
+                width: 313px;
+                height: 130px;
+            }
+
+            #p3 {
+                width: 650px;
+                height: 130px;
+            }
+
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="pull-left visible-md visible-lg">
+                    </a>
+
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <h1>Food , LLC</h1>
+                        </a>
+                    </div>
+                    
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#p1">
+                                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Chicken</a>
+                        </li>
+                        <li>
+                            <a href="#p2">
+                                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Beef</a>
+                        </li>
+                        <li>
+                            <a href="#p3">
+                                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Suchi</a>
+                        </li>
+                
+                    </ul><!-- #nav-list -->
+                </div><!-- .collapse .navbar-collapse -->
+            </div>
+        </nav>
+
+    </header>
+
+    <div id="main-content" class="container">
+        <h1>Our Menu</h1>
+
+        <div>
+            <p id="p1">
+                <span class="chicken">Chicken</span><br>
+                Spacing: Pay attention to the spacing shown in the mockup illustrations. Note the spacing between
+                sections
+                (both )
+
+            </p>
+            <p id="p2">
+                <span class="beef">Beef</span><br>
+                Section title region: Each section should have a section title region that is always positioned at the
+                top
+                right corner of the
+
+            </p>
+            <p id="p3">
+                <span class="sushi">Sushi</span><br>
+                Layout: In the tablet view (between 768px and 991px, inclusively), the first 2 sections should be in the
+                first row and be of
+
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
